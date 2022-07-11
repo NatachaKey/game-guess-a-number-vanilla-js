@@ -48,3 +48,38 @@ h3{
     font-family: 'Righteous', cursive;
     border: none;
 }
+
+
+@media all and (max-width:800px){
+
+    #inputField{
+        font-size: 10px;
+      width:85%;
+       text-align:center;
+    }
+    
+#btn{
+    font-size: 20px;
+}
+ .container{
+    width:80%;
+  }
+}
+
+
+
+@media all and (max-width:500px){
+
+
+    #inputField{
+        font-size: 10px;
+       width:85%;
+      text-align:center;
+    }
+    #btn{
+       font-size: 20px;
+    }
+  .container{
+    width:80%;
+  }
+}
