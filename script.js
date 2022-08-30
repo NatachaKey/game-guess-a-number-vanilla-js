@@ -1,5 +1,9 @@
-gsap.to(".block", { duration: 2.5, ease: "bounce.out", y: -500 });
-
+gsap.from(".block", { duration: 2.5, ease: "bounce.out", y: -500 });
+gsap.from("h3", { duration: 2, delay: 2.5, opacity:0, ease: "expo.out", y: 500 });
+gsap.from("#inputField", { duration: 2, delay: 2.8, opacity:0, ease: "expo.out", y: 500 });
+gsap.from("#btn", { duration: 2, delay: 3, opacity:0, ease: "expo.out", y: 500 });
+gsap.from("#attempts", { duration: 2, delay: 3.7, opacity:0, ease: "bounce.out", y: 50 });
+          
 const btn= document.querySelector("#btn");
 const attempts = document.querySelector("#attempts");
 const inputField=document.querySelector("#inputField");
