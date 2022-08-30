@@ -49,6 +49,9 @@ h3{
     border: none;
 }
 
+#attempts{
+  color:#42855B;
+}
 
 @media all and (max-width:800px){
 

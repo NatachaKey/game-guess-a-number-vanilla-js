@@ -1,7 +1,7 @@
+gsap.to(".block", { duration: 2.5, ease: "bounce.out", y: -500 });
+
 const btn= document.querySelector("#btn");
-
-const msg1 = document.querySelector("#message1");
-
+const attempts = document.querySelector("#attempts");
 const inputField=document.querySelector("#inputField");
 const answer= Math.floor(Math.random()*13)+1;
 
@@ -36,7 +36,7 @@ function play(){
             text: 'No, es más pequeño!',
             confirmButtonColor: '#66BFBF'
                  })
-      msg1.textContent="Tus intentos: " + numberOfAttempts;
+      attempts.textContent="Tus intentos: " + numberOfAttempts;
     }
         
     
@@ -47,7 +47,7 @@ function play(){
             confirmButtonColor: '#66BFBF'
           
         })
-      msg1.textContent="Tus intentos: " + numberOfAttempts;
+      attempts.textContent="Tus intentos: " + numberOfAttempts;
         }
 
     else {
@@ -60,7 +60,7 @@ function play(){
             imageAlt: 'Victoria',
             confirmButtonColor: '#66BFBF'
           })
-      msg1.textContent="Tus intentos: " + numberOfAttempts;
+      attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
           }
         
     }
