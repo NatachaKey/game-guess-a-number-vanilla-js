@@ -1,6 +1,12 @@
 const btn= document.querySelector("#btn");
+
+const msg1 = document.querySelector("#message1");
+
 const inputField=document.querySelector("#inputField");
 const answer= Math.floor(Math.random()*13)+1;
+
+let numberOfAttempts =0;
+
 
 
 btn.addEventListener("click", play);
@@ -25,21 +31,27 @@ function play(){
     }
 
     else if(userNumber >answer){
+    numberOfAttempts+=1;
         Swal.fire({
             text: 'No, es más pequeño!',
             confirmButtonColor: '#66BFBF'
-        })
+                 })
+      msg1.textContent="Tus intentos: " + numberOfAttempts;
     }
         
     
     else if(userNumber < answer){
+      numberOfAttempts+=1;
         Swal.fire({
             text: 'No, es más grande!',
             confirmButtonColor: '#66BFBF'
+          
         })
+      msg1.textContent="Tus intentos: " + numberOfAttempts;
         }
 
     else {
+      numberOfAttempts+=1
         Swal.fire({
             text: 'Siiiiiii! ¡Has ganado!',
             imageUrl: 'https://images.unsplash.com/photo-1631397832307-d8344ff719f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -48,6 +60,7 @@ function play(){
             imageAlt: 'Victoria',
             confirmButtonColor: '#66BFBF'
           })
+      msg1.textContent="Tus intentos: " + numberOfAttempts;
           }
         
     }
