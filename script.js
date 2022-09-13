@@ -64,6 +64,11 @@ function play(){
             imageAlt: 'Victoria',
             confirmButtonColor: '#66BFBF'
           })
+      
+  btn.textContent="Intentar otra vez";
+      if(btn.isClicked ===true)
+             location.reload();  
+      
       attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
           }
         
