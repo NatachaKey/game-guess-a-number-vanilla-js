@@ -66,9 +66,9 @@ function play(){
             confirmButtonColor: '#66BFBF'
           })
   
-  attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
+      attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
       
-  btn.style.display='none';
+      btn.style.display='none';
           const restart=document.querySelector('.restart');
           restart.style.display='block';
           restart.addEventListener('click', reload);
