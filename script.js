@@ -55,6 +55,7 @@ function play(){
         }
 
     else {
+      inputField.value = '';
       numberOfAttempts+=1
         Swal.fire({
             text: 'Siiiiiii! ¡Has ganado!',
@@ -64,12 +65,17 @@ function play(){
             imageAlt: 'Victoria',
             confirmButtonColor: '#66BFBF'
           })
+  
+  attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
       
-  btn.textContent="Intentar otra vez";
-      if(btn.isClicked ===true)
-             location.reload();  
-      
-      attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
+  btn.style.display='none';
+          const restart=document.querySelector('.restart');
+          restart.style.display='block';
+          restart.addEventListener('click', reload);
+          function reload(){
+            location.reload();
+          }
+ 
           }
         
     }

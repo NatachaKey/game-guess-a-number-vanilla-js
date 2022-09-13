@@ -48,7 +48,16 @@ h3{
     font-family: 'Righteous', cursive;
     border: none;
 }
-
+.restart{
+    display: none;
+    background-color: #F07DEA;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Righteous', cursive;
+    border: none;
+  
+}
 #attempts{
   color:#42855B;
 }
