@@ -1,97 +1,82 @@
 body{
-    background-image: url("https://cdn.glitch.global/7d24fd4c-0d25-4fe7-9915-cda1abf687c9/wp.jpg?v=1657565864554");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-}
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FEF9A7;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    width: 40%;
-    font-family: 'Righteous', cursive;
-
-}
-
-.block{
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 100vh;
-flex-wrap: wrap;
-}
-h3{
-    color: rgb(185, 112, 112);
-}
-
-#inputField{
-    padding: 20px;
-    font-family: 'Righteous', cursive;
-    width: 40%;
-    border: none;
-}
-
-#btn{
-    background-color: rgb(185, 112, 112);
-    color: #FEF9A7;
-    padding: 15px;
-    border-radius: 20px;
-    font-family: 'Righteous', cursive;
-    border: none;
-}
-.restart{
-    display: none;
-    background-color: #F07DEA;
-    color: #fff;
-    padding: 15px;
-    border-radius: 20px;
-    font-family: 'Righteous', cursive;
-    border: none;
-  
-}
-#attempts{
-  color:#42855B;
-}
-
-@media all and (max-width:800px){
-
-    #inputField{
-        font-size: 10px;
-      width:85%;
-       text-align:center;
-    }
-    
-#btn{
-    font-size: 20px;
+     background-image: url("https://cdn.glitch.global/7d24fd4c-0d25-4fe7-9915-cda1abf687c9/wp.jpg?v=1657565864554");
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
+     background-repeat: no-repeat;
 }
  .container{
-    width:80%;
-  }
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+     background-color: #FEF9A7;
+     padding: 20px;
+     border: none;
+     border-radius: 10px;
+     width: 40%;
+     font-family: 'Righteous', cursive;
 }
-
-
-
-@media all and (max-width:500px){
-
-
-    #inputField{
-        font-size: 10px;
-       width:85%;
-      text-align:center;
+ .block{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     min-height: 100vh;
+     flex-wrap: wrap;
+}
+ h3{
+     color: rgb(185, 112, 112);
+}
+ #inputField{
+     padding: 20px;
+     font-family: 'Righteous', cursive;
+     width: 40%;
+     border: none;
+}
+ #btn{
+     background-color: rgb(185, 112, 112);
+     color: #FEF9A7;
+     padding: 15px;
+     border-radius: 20px;
+     font-family: 'Righteous', cursive;
+     border: none;
+}
+ .restart{
+     display: none;
+     background-color: #F07DEA;
+     color: #fff;
+     padding: 15px;
+     border-radius: 20px;
+     font-family: 'Righteous', cursive;
+     border: none;
+}
+ #attempts{
+     color:#42855B;
+}
+ @media all and (max-width:800px){
+     #inputField{
+         font-size: 10px;
+         width:85%;
+         text-align:center;
     }
-    #btn{
-       font-size: 20px;
+     #btn{
+         font-size: 20px;
     }
-  .container{
-    width:80%;
-  }
+     .container{
+         width:80%;
+    }
+}
+ @media all and (max-width:500px){
+     #inputField{
+         font-size: 10px;
+         width:85%;
+         text-align:center;
+    }
+     #btn{
+         font-size: 20px;
+    }
+     .container{
+         width:80%;
+    }
 }

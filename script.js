@@ -11,8 +11,6 @@ const answer= Math.floor(Math.random()*13)+1;
 
 let numberOfAttempts =0;
 
-
-
 btn.addEventListener("click", play);
 
 function play(){
@@ -22,8 +20,7 @@ function play(){
         Swal.fire({
             icon: 'error',
             text: 'Inserta un número entre 1 y 13.',
-            confirmButtonColor: '#66BFBF'
-            
+            confirmButtonColor: '#66BFBF'           
     })
 }
     else if (isNaN(userNumber)){
@@ -39,17 +36,15 @@ function play(){
         Swal.fire({
             text: 'No, es más pequeño!',
             confirmButtonColor: '#66BFBF'
-                 })
+        })
       attempts.textContent="Tus intentos: " + numberOfAttempts;
-    }
-        
+    }      
     
     else if(userNumber < answer){
       numberOfAttempts+=1;
         Swal.fire({
             text: 'No, es más grande!',
-            confirmButtonColor: '#66BFBF'
-          
+            confirmButtonColor: '#66BFBF'        
         })
       attempts.textContent="Tus intentos: " + numberOfAttempts;
         }
@@ -79,7 +74,6 @@ function play(){
           }
         
     }
-
 
 inputField.addEventListener("keypress", function(e){
         if(e.keyCode===13){
