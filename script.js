@@ -14,7 +14,7 @@ let numberOfAttempts =0;
 btn.addEventListener("click", play);
 
 function play(){
-    const userNumber=document.querySelector("#inputField").value;
+    const userNumber = document.querySelector("#inputField").value;
     
     if (userNumber < 1 || userNumber > 13){
         Swal.fire({
@@ -22,7 +22,8 @@ function play(){
             text: 'Inserta un número entre 1 y 13.',
             confirmButtonColor: '#66BFBF'           
     })
-}
+    }
+  
     else if (isNaN(userNumber)){
         Swal.fire({
             icon: 'error',
@@ -47,11 +48,11 @@ function play(){
             confirmButtonColor: '#66BFBF'        
         })
       attempts.textContent="Tus intentos: " + numberOfAttempts;
-        }
+    }
 
     else {
       inputField.value = '';
-      numberOfAttempts+=1
+      numberOfAttempts+=1;
         Swal.fire({
             text: 'Siiiiiii! ¡Has ganado!',
             imageUrl: 'https://images.unsplash.com/photo-1631397832307-d8344ff719f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -59,8 +60,7 @@ function play(){
             imageHeight: 400,
             imageAlt: 'Victoria',
             confirmButtonColor: '#66BFBF'
-          })
-  
+        })  
       attempts.textContent="Necesitaste " + numberOfAttempts + " intentos." ;
       
       btn.style.display='none';
@@ -70,10 +70,9 @@ function play(){
           function reload(){
             location.reload();
           }
- 
-          }
-        
     }
+        
+}
 
 inputField.addEventListener("keypress", function(e){
         if(e.keyCode===13){
